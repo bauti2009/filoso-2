@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayuda</title>
+    <title>Iniciar Sesion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 class="titulo-pagina">INICIAR SESION</h1>
     <main class="pagina">
         <header>
             <div class="barra-superior">
@@ -28,27 +29,20 @@
             </nav>
         </header>
 
-        <section class="preguntas-frecuentes">
-            <h2>PREGUNTAS FRECUENTES</h2>
-            <div class="linea-separadora"></div>
-            <div class="lista-preguntas">
-                <div>REALIZAR UN PEDIDO</div>
-                <div>FORMAS DE PAGO</div>
-                <div>ENVIOS</div>
-                <div>GARANTIAS</div>
-                <div>SOLICITAR UN REINTEGRO</div>
-                <div>FACTURACION</div>
-            </div>
-        </section>
-
-        <section class="consulta">
-            <h2>CONSULTAR</h2>
-            <div class="linea-separadora"></div>
-            <form class="caja-consulta">
-                <input type="text" placeholder="Motivo">
-                <textarea placeholder="Explicacion a detalle"></textarea>
-                <button class="boton" type="submit">ENVIAR</button>
+        <section class="inicio-sesion">
+            <form class="caja-login">
+                <div class="campo-formulario">
+                    <label for="email">EMAIL</label>
+                    <input id="email" type="email">
+                </div>
+                <div class="campo-formulario">
+                    <label for="password">CONTRASEÑA</label>
+                    <input id="password" type="password">
+                </div>
+                <button class="boton" type="submit">INICIAR SESION</button>
             </form>
+            <p class="texto-cuenta">No tienes cuenta?</p>
+            <a class="boton" href="crear-cuenta.html">Crear cuenta</a>
         </section>
 
         <footer>

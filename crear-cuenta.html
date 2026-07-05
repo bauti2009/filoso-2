@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayuda</title>
+    <title>Crear Cuenta</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 class="titulo-pagina">crear cuenta</h1>
     <main class="pagina">
         <header>
             <div class="barra-superior">
@@ -28,26 +29,31 @@
             </nav>
         </header>
 
-        <section class="preguntas-frecuentes">
-            <h2>PREGUNTAS FRECUENTES</h2>
-            <div class="linea-separadora"></div>
-            <div class="lista-preguntas">
-                <div>REALIZAR UN PEDIDO</div>
-                <div>FORMAS DE PAGO</div>
-                <div>ENVIOS</div>
-                <div>GARANTIAS</div>
-                <div>SOLICITAR UN REINTEGRO</div>
-                <div>FACTURACION</div>
-            </div>
-        </section>
-
-        <section class="consulta">
-            <h2>CONSULTAR</h2>
-            <div class="linea-separadora"></div>
-            <form class="caja-consulta">
-                <input type="text" placeholder="Motivo">
-                <textarea placeholder="Explicacion a detalle"></textarea>
-                <button class="boton" type="submit">ENVIAR</button>
+        <section class="registro">
+            <form class="caja-registro">
+                <div class="grilla-registro">
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input id="nombre" type="text">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="registro-email">Email</label>
+                        <input id="registro-email" type="email">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="registro-password">CONTRASEÑA</label>
+                        <input id="registro-password" type="password">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="registro-repetir">Repetir Contraseña</label>
+                        <input id="registro-repetir" type="password">
+                    </div>
+                    <div class="campo-formulario campo-completo">
+                        <label for="telefono">Telefono</label>
+                        <input id="telefono" type="tel">
+                    </div>
+                </div>
+                <button class="boton" type="submit">Crear Cuenta</button>
             </form>
         </section>
 
