@@ -32,50 +32,87 @@
             <h2>PREGUNTAS FRECUENTES</h2>
             <div class="linea-separadora"></div>
             <div class="lista-preguntas">
-                <div>REALIZAR UN PEDIDO</div>
-                <div>FORMAS DE PAGO</div>
-                <div>ENVIOS</div>
-                <div>GARANTIAS</div>
-                <div>SOLICITAR UN REINTEGRO</div>
-                <div>FACTURACION</div>
+                <details>
+                    <summary>REALIZAR UN PEDIDO</summary>
+                    <p>Agregá los productos que quieras al carrito desde cada tarjeta o desde la página del producto. También podés armar tu PC componente por componente en "Arma tu PC". Cuando termines, entrá al carrito y tocá "Finalizar compra". Te contactamos por WhatsApp para confirmar el stock y coordinar el pago y la entrega.</p>
+                </details>
+                <details>
+                    <summary>FORMAS DE PAGO</summary>
+                    <p>Aceptamos transferencia bancaria, efectivo en el local, Mercado Pago y tarjetas de crédito o débito. Pagando por transferencia o en efectivo tenés el precio especial que ves en la página.</p>
+                </details>
+                <details>
+                    <summary>ENVIOS</summary>
+                    <p>Hacemos envíos a todo el país. En CABA y GBA el envío llega en 24 a 72 hs hábiles; al interior, entre 3 y 7 días hábiles según la zona. También podés retirar tu compra sin cargo en el local de Florida 537, local 379, CABA.</p>
+                </details>
+                <details>
+                    <summary>GARANTIAS</summary>
+                    <p>Todos los productos son nuevos, en caja cerrada y con factura. Tienen garantía oficial de 6 a 36 meses según el fabricante, y las PCs armadas tienen 12 meses de garantía en el armado. Si algo falla, escribinos con el número de pedido y te decimos cómo seguir.</p>
+                </details>
+                <details>
+                    <summary>SOLICITAR UN REINTEGRO</summary>
+                    <p>Tenés 10 días corridos desde que recibís el producto para arrepentirte de la compra. Tiene que estar sin uso y con su caja y accesorios. Mandanos una consulta con el motivo "Reintegro" y te devolvemos el dinero por el mismo medio de pago dentro de los 10 días hábiles.</p>
+                </details>
+                <details>
+                    <summary>FACTURACION</summary>
+                    <p>Emitimos factura A o B. Si necesitás factura A, pasanos tu CUIT y razón social antes de pagar. La factura te llega por mail cuando se confirma el pago.</p>
+                </details>
             </div>
         </section>
 
         <section class="consulta">
             <h2>CONSULTAR</h2>
             <div class="linea-separadora"></div>
-            <form class="caja-consulta">
-                <input type="text" placeholder="Motivo">
-                <textarea placeholder="Explicacion a detalle"></textarea>
-                <button class="boton" type="submit">ENVIAR</button>
+            <form class="caja-consulta" id="form-consulta" novalidate>
+                <div class="fila-consulta">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email (opcional para WhatsApp)">
+                </div>
+                <select name="motivo" required>
+                    <option value="">Motivo de la consulta</option>
+                    <option>Pedido</option>
+                    <option>Formas de pago</option>
+                    <option>Envíos</option>
+                    <option>Garantía</option>
+                    <option>Reintegro</option>
+                    <option>Arma tu PC</option>
+                    <option>Otro</option>
+                </select>
+                <textarea name="mensaje" placeholder="Explicacion a detalle" required></textarea>
+                <p class="aviso-consulta" id="aviso-consulta" aria-live="polite"></p>
+                <div class="botones-consulta">
+                    <button class="boton" type="submit" value="whatsapp">ENVIAR POR WHATSAPP</button>
+                    <button class="boton" type="submit" value="mail">ENVIAR POR MAIL</button>
+                </div>
             </form>
         </section>
 
         <footer>
             <h2>Contacto</h2>
             <div class="grilla-contacto">
-                <div class="item-contacto">
-                    <img src="Whatsapp.png" alt="">
+                <a class="item-contacto" href="https://wa.me/5491123433465" target="_blank" rel="noopener">
+                    <img src="icono-whatsapp.png" alt="">
                     <div><small>WhatsApp</small><p>+54 11 2343-3465</p></div>
-                </div>
-                <div class="item-contacto">
-                    <img src="mail(1).png" alt="">
-                    <div><small>Empresa</small><a href="#">pcgamingstore@gmail.com</a></div>
-                </div>
-                <div class="item-contacto">
-                    <span class="icono-local"></span>
+                </a>
+                <a class="item-contacto" href="mailto:pcgamingstore@gmail.com">
+                    <img src="icono-mail.svg" alt="">
+                    <div><small>Email</small><p>pcgamingstore@gmail.com</p></div>
+                </a>
+                <a class="item-contacto" href="https://www.google.com/maps/search/?api=1&amp;query=Florida+537+CABA" target="_blank" rel="noopener">
+                    <img src="icono-ubicacion.png" alt="">
                     <div><small>Local</small><p>Florida 537 local 379, CABA</p></div>
-                </div>
-                <div class="item-contacto">
-                    <img src="ig.png" alt="">
-                    <div><small>Instagram</small><a href="#">@pcgamingstore</a></div>
-                </div>
+                </a>
+                <a class="item-contacto" href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">
+                    <img src="icono-instagram.png" alt="">
+                    <div><small>Instagram</small><p>@pcgamingstore</p></div>
+                </a>
             </div>
             <div class="pie-inferior">
-                <span>@PCGAMINGSTORE</span>
-                <span>Terminos y Condiciones</span>
+                <a href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">@PCGAMINGSTORE</a>
+                <a href="terminos.html">Terminos y Condiciones</a>
             </div>
         </footer>
     </main>
+    <script src="productos-datos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

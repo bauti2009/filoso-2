@@ -1,4 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Armar PC - Gabinete</title><link rel="stylesheet" href="style.css"></head>
-<body><main class="pagina"><header><div class="barra-superior"><a class="logo-principal" href="index.html"><img src="pclogo.png" alt="PC Gamer"></a><div class="buscador"><input type="search" aria-label="Buscar"><span>&#8981;</span></div><div class="iconos-header"><a href="iniciar-sesion.html"><img src="bx-user.png" alt="Usuario"></a><a href="carrito.html"><img src="bx-cart-alt-2.png" alt="Carrito"></a></div></div><nav><a href="productos.html">PRODUCTOS</a><a href="armarpc.html">ARMA TU PC</a><a href="pcarmada.html">PC ARMADAS</a><a href="ayuda.html">AYUDA</a></nav></header><section class="contenido-armado"><h1 class="titulo-armado">Arma Tu PC</h1><div class="armado-layout"><div class="menu-componentes"><a class="icono-componente" href="armarpc-procesador.html"><img src="imagenes-armado/procesador.png" alt="Procesador"></a><a class="icono-componente" href="armarpc-placa-madre.html"><img src="imagenes-armado/placa-madre.png" alt="Placa madre"></a><a class="icono-componente" href="armarpc-refrigeracion.html"><img src="imagenes-armado/refrigeracion.png" alt="Refrigeracion"></a><a class="icono-componente" href="armarpc-memoria-ram.html"><img src="imagenes-armado/memoria-ram.png" alt="Memoria RAM"></a><a class="icono-componente" href="armarpc-placa-video.html"><img src="imagenes-armado/placa-video.png" alt="Placa de video"></a><a class="icono-componente" href="armarpc-almacenamiento.html"><img src="imagenes-armado/almacenamiento.png" alt="Almacenamiento"></a><a class="icono-componente" href="armarpc-fuente.html"><img src="imagenes-armado/fuente.png" alt="Fuente"></a><a class="icono-componente" href="armarpc-gabinete.html"><img src="imagenes-armado/gabinete.png" alt="Gabinete"></a><a class="icono-componente" href="armarpc-monitor.html"><img src="imagenes-armado/monitor.png" alt="Monitor"></a><a class="icono-componente" href="armarpc-perifericos.html"><img src="imagenes-armado/perifericos.png" alt="Perifericos"></a></div><h2 class="nombre-componente">Gabinete</h2></div></section></main></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armar PC - Gabinete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="pagina">
+        <header>
+            <div class="barra-superior">
+                <a class="logo-principal" href="index.html"><img src="pclogo.png" alt="PC Gamer"></a>
+                <div class="buscador">
+                    <input type="search" aria-label="Buscar">
+                    <span>⌕</span>
+                </div>
+                <div class="iconos-header">
+                    <a href="iniciar-sesion.html"><img src="bx-user.png" alt="Usuario"></a>
+                    <a href="carrito.html"><img src="bx-cart-alt-2.png" alt="Carrito"></a>
+                </div>
+            </div>
+            <nav>
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="armarpc.html">ARMA TU PC</a>
+                <a href="pcarmada.html">PC ARMADAS</a>
+                <a href="ayuda.html">AYUDA</a>
+            </nav>
+        </header>
+
+        <section class="contenido-armado">
+            <h1 class="titulo-armado">Arma Tu PC</h1>
+            <div class="armado-layout">
+                <div class="menu-componentes">
+                    <a class="icono-componente" href="armarpc-procesador.html" title="Procesador"><img src="imagenes-armado/procesador.png" alt="" onerror="this.remove()"><span>Procesador</span></a>
+                    <a class="icono-componente" href="armarpc-placa-madre.html" title="Placa madre"><img src="imagenes-armado/placa-madre.png" alt="" onerror="this.remove()"><span>Placa madre</span></a>
+                    <a class="icono-componente" href="armarpc-refrigeracion.html" title="Refrigeración"><img src="imagenes-armado/refrigeracion.png" alt="" onerror="this.remove()"><span>Refrigeración</span></a>
+                    <a class="icono-componente" href="armarpc-memoria-ram.html" title="Memoria RAM"><img src="imagenes-armado/memoria-ram.png" alt="" onerror="this.remove()"><span>Memoria RAM</span></a>
+                    <a class="icono-componente" href="armarpc-placa-video.html" title="Placa de video"><img src="imagenes-armado/placa-video.png" alt="" onerror="this.remove()"><span>Placa de video</span></a>
+                    <a class="icono-componente" href="armarpc-almacenamiento.html" title="Almacenamiento"><img src="imagenes-armado/almacenamiento.png" alt="" onerror="this.remove()"><span>Almacenamiento</span></a>
+                    <a class="icono-componente" href="armarpc-fuente.html" title="Fuente"><img src="imagenes-armado/fuente.png" alt="" onerror="this.remove()"><span>Fuente</span></a>
+                    <a class="icono-componente" href="armarpc-gabinete.html" title="Gabinete"><img src="imagenes-armado/gabinete.png" alt="" onerror="this.remove()"><span>Gabinete</span></a>
+                    <a class="icono-componente" href="armarpc-monitor.html" title="Monitor"><img src="imagenes-armado/monitor.png" alt="" onerror="this.remove()"><span>Monitor</span></a>
+                    <a class="icono-componente" href="armarpc-perifericos.html" title="Periféricos"><img src="imagenes-armado/perifericos.png" alt="" onerror="this.remove()"><span>Periféricos</span></a>
+                </div>
+                <div class="columna-armado">
+                    <h2 class="nombre-componente">Gabinete</h2>
+                    <div class="barra-armado" id="barra-armado"></div>
+                    <div class="grilla-armado">
+                        <article class="tarjeta-producto opcion-armado" data-slot="gabinete" data-id="gabinete-nzxt-h5-flow-black-vidrio-templado" data-nombre="Gabinete NZXT H5 Flow Black Vidrio Templado" data-precio="140000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/nzxt-h5-flow-atx-mid-tower-case-black-cc-h52fb-01-102997.jpg?v=1736407222">
+                            <a class="enlace-producto" href="producto.html?id=gabinete-nzxt-h5-flow-black-vidrio-templado">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/nzxt-h5-flow-atx-mid-tower-case-black-cc-h52fb-01-102997.jpg?v=1736407222" alt="Gabinete NZXT H5 Flow Black Vidrio Templado">
+                                <p>Gabinete NZXT H5 Flow Black Vidrio Templado</p>
+                            </a>
+                            <strong>$140.000</strong>
+                            <a class="ver-specs" href="producto.html?id=gabinete-nzxt-h5-flow-black-vidrio-templado">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="gabinete" data-id="gabinete-nzxt-h6-flow-rgb-white-doble-camara" data-nombre="Gabinete NZXT H6 Flow RGB White Doble Cámara" data-precio="210000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/nzxt-cc-h61fw-r1-h6-flow-rgb-mid-tower-dual-chamber-airflow-atx-case-white-270466.jpg?v=1733279044">
+                            <a class="enlace-producto" href="producto.html?id=gabinete-nzxt-h6-flow-rgb-white-doble-camara">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/nzxt-cc-h61fw-r1-h6-flow-rgb-mid-tower-dual-chamber-airflow-atx-case-white-270466.jpg?v=1733279044" alt="Gabinete NZXT H6 Flow RGB White Doble Cámara">
+                                <p>Gabinete NZXT H6 Flow RGB White Doble Cámara</p>
+                            </a>
+                            <strong>$210.000</strong>
+                            <a class="ver-specs" href="producto.html?id=gabinete-nzxt-h6-flow-rgb-white-doble-camara">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="gabinete" data-id="gabinete-lian-li-o11-dynamic-evo-rgb-black" data-nombre="Gabinete Lian Li O11 Dynamic EVO RGB Black" data-precio="260000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/lian-li-o11dergbx-o11-dynamic-evo-rgb-case-black-247019.jpg?v=1734071131">
+                            <a class="enlace-producto" href="producto.html?id=gabinete-lian-li-o11-dynamic-evo-rgb-black">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/lian-li-o11dergbx-o11-dynamic-evo-rgb-case-black-247019.jpg?v=1734071131" alt="Gabinete Lian Li O11 Dynamic EVO RGB Black">
+                                <p>Gabinete Lian Li O11 Dynamic EVO RGB Black</p>
+                            </a>
+                            <strong>$260.000</strong>
+                            <a class="ver-specs" href="producto.html?id=gabinete-lian-li-o11-dynamic-evo-rgb-black">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="gabinete" data-id="gabinete-corsair-icue-5000x-rgb-white" data-nombre="Gabinete Corsair iCUE 5000X RGB White" data-precio="300000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/corsair-cc-9011213-ww-icue-5000x-rgb-tempered-glass-white-mid-tower-atx-pc-smart-case-946925.jpg?v=1733275770">
+                            <a class="enlace-producto" href="producto.html?id=gabinete-corsair-icue-5000x-rgb-white">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/corsair-cc-9011213-ww-icue-5000x-rgb-tempered-glass-white-mid-tower-atx-pc-smart-case-946925.jpg?v=1733275770" alt="Gabinete Corsair iCUE 5000X RGB White">
+                                <p>Gabinete Corsair iCUE 5000X RGB White</p>
+                            </a>
+                            <strong>$300.000</strong>
+                            <a class="ver-specs" href="producto.html?id=gabinete-corsair-icue-5000x-rgb-white">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="gabinete" data-id="gabinete-hyte-y70-black-white-doble-camara" data-nombre="Gabinete HYTE Y70 Black/White Doble Cámara" data-precio="330000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/hyte-dual-chamber-mid-tower-atx-computer-case-black-white-cs-hyte-y70-bw-765220.jpg?v=1749169467">
+                            <a class="enlace-producto" href="producto.html?id=gabinete-hyte-y70-black-white-doble-camara">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/hyte-dual-chamber-mid-tower-atx-computer-case-black-white-cs-hyte-y70-bw-765220.jpg?v=1749169467" alt="Gabinete HYTE Y70 Black/White Doble Cámara">
+                                <p>Gabinete HYTE Y70 Black/White Doble Cámara</p>
+                            </a>
+                            <strong>$330.000</strong>
+                            <a class="ver-specs" href="producto.html?id=gabinete-hyte-y70-black-white-doble-camara">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="gabinete" data-id="gabinete-fractal-design-meshify-c-black" data-nombre="Gabinete Fractal Design Meshify C Black" data-precio="150000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/fractal-design-fd-ca-mesh-c-bko-meshify-c-atx-mid-tower-computer-case-138249.jpg?v=1733276666">
+                            <a class="enlace-producto" href="producto.html?id=gabinete-fractal-design-meshify-c-black">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/fractal-design-fd-ca-mesh-c-bko-meshify-c-atx-mid-tower-computer-case-138249.jpg?v=1733276666" alt="Gabinete Fractal Design Meshify C Black">
+                                <p>Gabinete Fractal Design Meshify C Black</p>
+                            </a>
+                            <strong>$150.000</strong>
+                            <a class="ver-specs" href="producto.html?id=gabinete-fractal-design-meshify-c-black">Ver especificaciones</a>
+                        </article>
+                    </div>
+                    <div class="navegacion-armado"><a class="boton-agregar" href="armarpc-monitor.html">Siguiente: Monitor →</a></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Contacto</h2>
+            <div class="grilla-contacto">
+                <a class="item-contacto" href="https://wa.me/5491123433465" target="_blank" rel="noopener">
+                    <img src="icono-whatsapp.png" alt="">
+                    <div><small>WhatsApp</small><p>+54 11 2343-3465</p></div>
+                </a>
+                <a class="item-contacto" href="mailto:pcgamingstore@gmail.com">
+                    <img src="icono-mail.svg" alt="">
+                    <div><small>Email</small><p>pcgamingstore@gmail.com</p></div>
+                </a>
+                <a class="item-contacto" href="https://www.google.com/maps/search/?api=1&amp;query=Florida+537+CABA" target="_blank" rel="noopener">
+                    <img src="icono-ubicacion.png" alt="">
+                    <div><small>Local</small><p>Florida 537 local 379, CABA</p></div>
+                </a>
+                <a class="item-contacto" href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">
+                    <img src="icono-instagram.png" alt="">
+                    <div><small>Instagram</small><p>@pcgamingstore</p></div>
+                </a>
+            </div>
+            <div class="pie-inferior">
+                <a href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">@PCGAMINGSTORE</a>
+                <a href="terminos.html">Terminos y Condiciones</a>
+            </div>
+        </footer>
+    </main>
+    <script src="productos-datos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

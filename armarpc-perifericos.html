@@ -1,4 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Armar PC - Perifericos</title><link rel="stylesheet" href="style.css"></head>
-<body><main class="pagina"><header><div class="barra-superior"><a class="logo-principal" href="index.html"><img src="pclogo.png" alt="PC Gamer"></a><div class="buscador"><input type="search" aria-label="Buscar"><span>&#8981;</span></div><div class="iconos-header"><a href="iniciar-sesion.html"><img src="bx-user.png" alt="Usuario"></a><a href="carrito.html"><img src="bx-cart-alt-2.png" alt="Carrito"></a></div></div><nav><a href="productos.html">PRODUCTOS</a><a href="armarpc.html">ARMA TU PC</a><a href="pcarmada.html">PC ARMADAS</a><a href="ayuda.html">AYUDA</a></nav></header><section class="contenido-armado"><h1 class="titulo-armado">Arma Tu PC</h1><div class="armado-layout"><div class="menu-componentes"><a class="icono-componente" href="armarpc-procesador.html"><img src="imagenes-armado/procesador.png" alt="Procesador"></a><a class="icono-componente" href="armarpc-placa-madre.html"><img src="imagenes-armado/placa-madre.png" alt="Placa madre"></a><a class="icono-componente" href="armarpc-refrigeracion.html"><img src="imagenes-armado/refrigeracion.png" alt="Refrigeracion"></a><a class="icono-componente" href="armarpc-memoria-ram.html"><img src="imagenes-armado/memoria-ram.png" alt="Memoria RAM"></a><a class="icono-componente" href="armarpc-placa-video.html"><img src="imagenes-armado/placa-video.png" alt="Placa de video"></a><a class="icono-componente" href="armarpc-almacenamiento.html"><img src="imagenes-armado/almacenamiento.png" alt="Almacenamiento"></a><a class="icono-componente" href="armarpc-fuente.html"><img src="imagenes-armado/fuente.png" alt="Fuente"></a><a class="icono-componente" href="armarpc-gabinete.html"><img src="imagenes-armado/gabinete.png" alt="Gabinete"></a><a class="icono-componente" href="armarpc-monitor.html"><img src="imagenes-armado/monitor.png" alt="Monitor"></a><a class="icono-componente" href="armarpc-perifericos.html"><img src="imagenes-armado/perifericos.png" alt="Perifericos"></a></div><h2 class="nombre-componente">Perifericos</h2></div></section></main></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armar PC - Periféricos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="pagina">
+        <header>
+            <div class="barra-superior">
+                <a class="logo-principal" href="index.html"><img src="pclogo.png" alt="PC Gamer"></a>
+                <div class="buscador">
+                    <input type="search" aria-label="Buscar">
+                    <span>⌕</span>
+                </div>
+                <div class="iconos-header">
+                    <a href="iniciar-sesion.html"><img src="bx-user.png" alt="Usuario"></a>
+                    <a href="carrito.html"><img src="bx-cart-alt-2.png" alt="Carrito"></a>
+                </div>
+            </div>
+            <nav>
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="armarpc.html">ARMA TU PC</a>
+                <a href="pcarmada.html">PC ARMADAS</a>
+                <a href="ayuda.html">AYUDA</a>
+            </nav>
+        </header>
+
+        <section class="contenido-armado">
+            <h1 class="titulo-armado">Arma Tu PC</h1>
+            <div class="armado-layout">
+                <div class="menu-componentes">
+                    <a class="icono-componente" href="armarpc-procesador.html" title="Procesador"><img src="imagenes-armado/procesador.png" alt="" onerror="this.remove()"><span>Procesador</span></a>
+                    <a class="icono-componente" href="armarpc-placa-madre.html" title="Placa madre"><img src="imagenes-armado/placa-madre.png" alt="" onerror="this.remove()"><span>Placa madre</span></a>
+                    <a class="icono-componente" href="armarpc-refrigeracion.html" title="Refrigeración"><img src="imagenes-armado/refrigeracion.png" alt="" onerror="this.remove()"><span>Refrigeración</span></a>
+                    <a class="icono-componente" href="armarpc-memoria-ram.html" title="Memoria RAM"><img src="imagenes-armado/memoria-ram.png" alt="" onerror="this.remove()"><span>Memoria RAM</span></a>
+                    <a class="icono-componente" href="armarpc-placa-video.html" title="Placa de video"><img src="imagenes-armado/placa-video.png" alt="" onerror="this.remove()"><span>Placa de video</span></a>
+                    <a class="icono-componente" href="armarpc-almacenamiento.html" title="Almacenamiento"><img src="imagenes-armado/almacenamiento.png" alt="" onerror="this.remove()"><span>Almacenamiento</span></a>
+                    <a class="icono-componente" href="armarpc-fuente.html" title="Fuente"><img src="imagenes-armado/fuente.png" alt="" onerror="this.remove()"><span>Fuente</span></a>
+                    <a class="icono-componente" href="armarpc-gabinete.html" title="Gabinete"><img src="imagenes-armado/gabinete.png" alt="" onerror="this.remove()"><span>Gabinete</span></a>
+                    <a class="icono-componente" href="armarpc-monitor.html" title="Monitor"><img src="imagenes-armado/monitor.png" alt="" onerror="this.remove()"><span>Monitor</span></a>
+                    <a class="icono-componente" href="armarpc-perifericos.html" title="Periféricos"><img src="imagenes-armado/perifericos.png" alt="" onerror="this.remove()"><span>Periféricos</span></a>
+                </div>
+                <div class="columna-armado">
+                    <h2 class="nombre-componente">Periféricos <small class="nota-armado">(podés elegir varios)</small></h2>
+                    <div class="barra-armado" id="barra-armado"></div>
+                    <div class="grilla-armado">
+                        <article class="tarjeta-producto opcion-armado" data-slot="perifericos" data-id="mouse-gamer-logitech-g203-lightsync-rgb" data-nombre="Mouse Gamer Logitech G203 Lightsync RGB" data-precio="30000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/logitech-910-005790-g203-lightsync-rgb-6-button-gaming-mouse-282752.jpg?v=1733277796">
+                            <a class="enlace-producto" href="producto.html?id=mouse-gamer-logitech-g203-lightsync-rgb">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/logitech-910-005790-g203-lightsync-rgb-6-button-gaming-mouse-282752.jpg?v=1733277796" alt="Mouse Gamer Logitech G203 Lightsync RGB">
+                                <p>Mouse Gamer Logitech G203 Lightsync RGB</p>
+                            </a>
+                            <strong>$30.000</strong>
+                            <a class="ver-specs" href="producto.html?id=mouse-gamer-logitech-g203-lightsync-rgb">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="perifericos" data-id="mouse-gamer-logitech-g502-hero" data-nombre="Mouse Gamer Logitech G502 HERO" data-precio="65000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/logitech-910-005469-g502-hero-wired-optical-high-performance-gaming-mouse-with-rgb-lighting-899565.jpg?v=1733277793">
+                            <a class="enlace-producto" href="producto.html?id=mouse-gamer-logitech-g502-hero">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/logitech-910-005469-g502-hero-wired-optical-high-performance-gaming-mouse-with-rgb-lighting-899565.jpg?v=1733277793" alt="Mouse Gamer Logitech G502 HERO">
+                                <p>Mouse Gamer Logitech G502 HERO</p>
+                            </a>
+                            <strong>$65.000</strong>
+                            <a class="ver-specs" href="producto.html?id=mouse-gamer-logitech-g502-hero">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="perifericos" data-id="teclado-gamer-logitech-g213-prodigy-rgb" data-nombre="Teclado Gamer Logitech G213 Prodigy RGB" data-precio="55000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/logitech-920-008083-g213-prodigy-keyboard-with-rgb-lighting-313960.jpg?v=1733277794">
+                            <a class="enlace-producto" href="producto.html?id=teclado-gamer-logitech-g213-prodigy-rgb">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/logitech-920-008083-g213-prodigy-keyboard-with-rgb-lighting-313960.jpg?v=1733277794" alt="Teclado Gamer Logitech G213 Prodigy RGB">
+                                <p>Teclado Gamer Logitech G213 Prodigy RGB</p>
+                            </a>
+                            <strong>$55.000</strong>
+                            <a class="ver-specs" href="producto.html?id=teclado-gamer-logitech-g213-prodigy-rgb">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="perifericos" data-id="teclado-mecanico-logitech-g-pro-tkl" data-nombre="Teclado Mecánico Logitech G Pro TKL" data-precio="140000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/logitech-g-pro-mechanical-gaming-keyboard-wired-black-920-009388-6042831.jpg?v=1771945509">
+                            <a class="enlace-producto" href="producto.html?id=teclado-mecanico-logitech-g-pro-tkl">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/logitech-g-pro-mechanical-gaming-keyboard-wired-black-920-009388-6042831.jpg?v=1771945509" alt="Teclado Mecánico Logitech G Pro TKL">
+                                <p>Teclado Mecánico Logitech G Pro TKL</p>
+                            </a>
+                            <strong>$140.000</strong>
+                            <a class="ver-specs" href="producto.html?id=teclado-mecanico-logitech-g-pro-tkl">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="perifericos" data-id="auriculares-gamer-logitech-g432-7-1" data-nombre="Auriculares Gamer Logitech G432 7.1" data-precio="70000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/logitech-981-000769-g432-wired-virtual-71-surround-sound-gaming-headset-865049.jpg?v=1733277859">
+                            <a class="enlace-producto" href="producto.html?id=auriculares-gamer-logitech-g432-7-1">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/logitech-981-000769-g432-wired-virtual-71-surround-sound-gaming-headset-865049.jpg?v=1733277859" alt="Auriculares Gamer Logitech G432 7.1">
+                                <p>Auriculares Gamer Logitech G432 7.1</p>
+                            </a>
+                            <strong>$70.000</strong>
+                            <a class="ver-specs" href="producto.html?id=auriculares-gamer-logitech-g432-7-1">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="perifericos" data-id="auriculares-gamer-asus-rog-delta-usb-c" data-nombre="Auriculares Gamer ASUS ROG Delta USB-C" data-precio="150000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/asus-rog-delta-usb-c-cross-platform-rgb-ess-71-stereo-gaming-headset-with-removable-boom-mic-635025.jpg?v=1733275004">
+                            <a class="enlace-producto" href="producto.html?id=auriculares-gamer-asus-rog-delta-usb-c">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/asus-rog-delta-usb-c-cross-platform-rgb-ess-71-stereo-gaming-headset-with-removable-boom-mic-635025.jpg?v=1733275004" alt="Auriculares Gamer ASUS ROG Delta USB-C">
+                                <p>Auriculares Gamer ASUS ROG Delta USB-C</p>
+                            </a>
+                            <strong>$150.000</strong>
+                            <a class="ver-specs" href="producto.html?id=auriculares-gamer-asus-rog-delta-usb-c">Ver especificaciones</a>
+                        </article>
+                    </div>
+                    <div class="navegacion-armado"><a class="boton-agregar" href="armarpc.html">Terminar →</a></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Contacto</h2>
+            <div class="grilla-contacto">
+                <a class="item-contacto" href="https://wa.me/5491123433465" target="_blank" rel="noopener">
+                    <img src="icono-whatsapp.png" alt="">
+                    <div><small>WhatsApp</small><p>+54 11 2343-3465</p></div>
+                </a>
+                <a class="item-contacto" href="mailto:pcgamingstore@gmail.com">
+                    <img src="icono-mail.svg" alt="">
+                    <div><small>Email</small><p>pcgamingstore@gmail.com</p></div>
+                </a>
+                <a class="item-contacto" href="https://www.google.com/maps/search/?api=1&amp;query=Florida+537+CABA" target="_blank" rel="noopener">
+                    <img src="icono-ubicacion.png" alt="">
+                    <div><small>Local</small><p>Florida 537 local 379, CABA</p></div>
+                </a>
+                <a class="item-contacto" href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">
+                    <img src="icono-instagram.png" alt="">
+                    <div><small>Instagram</small><p>@pcgamingstore</p></div>
+                </a>
+            </div>
+            <div class="pie-inferior">
+                <a href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">@PCGAMINGSTORE</a>
+                <a href="terminos.html">Terminos y Condiciones</a>
+            </div>
+        </footer>
+    </main>
+    <script src="productos-datos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

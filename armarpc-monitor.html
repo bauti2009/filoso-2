@@ -1,4 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Armar PC - Monitor</title><link rel="stylesheet" href="style.css"></head>
-<body><main class="pagina"><header><div class="barra-superior"><a class="logo-principal" href="index.html"><img src="pclogo.png" alt="PC Gamer"></a><div class="buscador"><input type="search" aria-label="Buscar"><span>&#8981;</span></div><div class="iconos-header"><a href="iniciar-sesion.html"><img src="bx-user.png" alt="Usuario"></a><a href="carrito.html"><img src="bx-cart-alt-2.png" alt="Carrito"></a></div></div><nav><a href="productos.html">PRODUCTOS</a><a href="armarpc.html">ARMA TU PC</a><a href="pcarmada.html">PC ARMADAS</a><a href="ayuda.html">AYUDA</a></nav></header><section class="contenido-armado"><h1 class="titulo-armado">Arma Tu PC</h1><div class="armado-layout"><div class="menu-componentes"><a class="icono-componente" href="armarpc-procesador.html"><img src="imagenes-armado/procesador.png" alt="Procesador"></a><a class="icono-componente" href="armarpc-placa-madre.html"><img src="imagenes-armado/placa-madre.png" alt="Placa madre"></a><a class="icono-componente" href="armarpc-refrigeracion.html"><img src="imagenes-armado/refrigeracion.png" alt="Refrigeracion"></a><a class="icono-componente" href="armarpc-memoria-ram.html"><img src="imagenes-armado/memoria-ram.png" alt="Memoria RAM"></a><a class="icono-componente" href="armarpc-placa-video.html"><img src="imagenes-armado/placa-video.png" alt="Placa de video"></a><a class="icono-componente" href="armarpc-almacenamiento.html"><img src="imagenes-armado/almacenamiento.png" alt="Almacenamiento"></a><a class="icono-componente" href="armarpc-fuente.html"><img src="imagenes-armado/fuente.png" alt="Fuente"></a><a class="icono-componente" href="armarpc-gabinete.html"><img src="imagenes-armado/gabinete.png" alt="Gabinete"></a><a class="icono-componente" href="armarpc-monitor.html"><img src="imagenes-armado/monitor.png" alt="Monitor"></a><a class="icono-componente" href="armarpc-perifericos.html"><img src="imagenes-armado/perifericos.png" alt="Perifericos"></a></div><h2 class="nombre-componente">Monitor</h2></div></section></main></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armar PC - Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="pagina">
+        <header>
+            <div class="barra-superior">
+                <a class="logo-principal" href="index.html"><img src="pclogo.png" alt="PC Gamer"></a>
+                <div class="buscador">
+                    <input type="search" aria-label="Buscar">
+                    <span>⌕</span>
+                </div>
+                <div class="iconos-header">
+                    <a href="iniciar-sesion.html"><img src="bx-user.png" alt="Usuario"></a>
+                    <a href="carrito.html"><img src="bx-cart-alt-2.png" alt="Carrito"></a>
+                </div>
+            </div>
+            <nav>
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="armarpc.html">ARMA TU PC</a>
+                <a href="pcarmada.html">PC ARMADAS</a>
+                <a href="ayuda.html">AYUDA</a>
+            </nav>
+        </header>
+
+        <section class="contenido-armado">
+            <h1 class="titulo-armado">Arma Tu PC</h1>
+            <div class="armado-layout">
+                <div class="menu-componentes">
+                    <a class="icono-componente" href="armarpc-procesador.html" title="Procesador"><img src="imagenes-armado/procesador.png" alt="" onerror="this.remove()"><span>Procesador</span></a>
+                    <a class="icono-componente" href="armarpc-placa-madre.html" title="Placa madre"><img src="imagenes-armado/placa-madre.png" alt="" onerror="this.remove()"><span>Placa madre</span></a>
+                    <a class="icono-componente" href="armarpc-refrigeracion.html" title="Refrigeración"><img src="imagenes-armado/refrigeracion.png" alt="" onerror="this.remove()"><span>Refrigeración</span></a>
+                    <a class="icono-componente" href="armarpc-memoria-ram.html" title="Memoria RAM"><img src="imagenes-armado/memoria-ram.png" alt="" onerror="this.remove()"><span>Memoria RAM</span></a>
+                    <a class="icono-componente" href="armarpc-placa-video.html" title="Placa de video"><img src="imagenes-armado/placa-video.png" alt="" onerror="this.remove()"><span>Placa de video</span></a>
+                    <a class="icono-componente" href="armarpc-almacenamiento.html" title="Almacenamiento"><img src="imagenes-armado/almacenamiento.png" alt="" onerror="this.remove()"><span>Almacenamiento</span></a>
+                    <a class="icono-componente" href="armarpc-fuente.html" title="Fuente"><img src="imagenes-armado/fuente.png" alt="" onerror="this.remove()"><span>Fuente</span></a>
+                    <a class="icono-componente" href="armarpc-gabinete.html" title="Gabinete"><img src="imagenes-armado/gabinete.png" alt="" onerror="this.remove()"><span>Gabinete</span></a>
+                    <a class="icono-componente" href="armarpc-monitor.html" title="Monitor"><img src="imagenes-armado/monitor.png" alt="" onerror="this.remove()"><span>Monitor</span></a>
+                    <a class="icono-componente" href="armarpc-perifericos.html" title="Periféricos"><img src="imagenes-armado/perifericos.png" alt="" onerror="this.remove()"><span>Periféricos</span></a>
+                </div>
+                <div class="columna-armado">
+                    <h2 class="nombre-componente">Monitor</h2>
+                    <div class="barra-armado" id="barra-armado"></div>
+                    <div class="grilla-armado">
+                        <article class="tarjeta-producto opcion-armado" data-slot="monitor" data-id="monitor-asus-va249qg-24-full-hd-ips-120hz" data-nombre="Monitor ASUS VA249QG 24&quot; Full HD IPS 120Hz" data-precio="170000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/asus-va249qg-24-169-full-hd-120hz-ips-led-gaming-monitor-8384921.jpg?v=1759232400">
+                            <a class="enlace-producto" href="producto.html?id=monitor-asus-va249qg-24-full-hd-ips-120hz">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/asus-va249qg-24-169-full-hd-120hz-ips-led-gaming-monitor-8384921.jpg?v=1759232400" alt="Monitor ASUS VA249QG 24&quot; Full HD IPS 120Hz">
+                                <p>Monitor ASUS VA249QG 24" Full HD IPS 120Hz</p>
+                            </a>
+                            <strong>$170.000</strong>
+                            <a class="ver-specs" href="producto.html?id=monitor-asus-va249qg-24-full-hd-ips-120hz">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="monitor" data-id="monitor-gamer-asus-tuf-vg247q1a-24-full-hd-165hz" data-nombre="Monitor Gamer ASUS TUF VG247Q1A 24&quot; Full HD 165Hz" data-precio="230000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/asus-vg247q1a-tuf-24-class-full-hd-gaming-lcd-monitor-169-black-862997.jpg?v=1733275009">
+                            <a class="enlace-producto" href="producto.html?id=monitor-gamer-asus-tuf-vg247q1a-24-full-hd-165hz">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/asus-vg247q1a-tuf-24-class-full-hd-gaming-lcd-monitor-169-black-862997.jpg?v=1733275009" alt="Monitor Gamer ASUS TUF VG247Q1A 24&quot; Full HD 165Hz">
+                                <p>Monitor Gamer ASUS TUF VG247Q1A 24" Full HD 165Hz</p>
+                            </a>
+                            <strong>$230.000</strong>
+                            <a class="ver-specs" href="producto.html?id=monitor-gamer-asus-tuf-vg247q1a-24-full-hd-165hz">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="monitor" data-id="monitor-gamer-msi-mag-275upd-e14-27-4k-144hz" data-nombre="Monitor Gamer MSI MAG 275UPD E14 27&quot; 4K 144Hz" data-precio="560000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/msi-27-4k-uhd-144hz-ips-gaming-lcd-monitor-mag-275upd-e14-6682678.jpg?v=1762830909">
+                            <a class="enlace-producto" href="producto.html?id=monitor-gamer-msi-mag-275upd-e14-27-4k-144hz">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/msi-27-4k-uhd-144hz-ips-gaming-lcd-monitor-mag-275upd-e14-6682678.jpg?v=1762830909" alt="Monitor Gamer MSI MAG 275UPD E14 27&quot; 4K 144Hz">
+                                <p>Monitor Gamer MSI MAG 275UPD E14 27" 4K 144Hz</p>
+                            </a>
+                            <strong>$560.000</strong>
+                            <a class="ver-specs" href="producto.html?id=monitor-gamer-msi-mag-275upd-e14-27-4k-144hz">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="monitor" data-id="monitor-gamer-msi-mag-401qr-40-uwqhd-ultrawide" data-nombre="Monitor Gamer MSI MAG 401QR 40&quot; UWQHD Ultrawide" data-precio="650000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/msi-mag401qr-40-uwqhd-219-widescreen-gaming-lcd-monitor-722869.jpg?v=1733278659">
+                            <a class="enlace-producto" href="producto.html?id=monitor-gamer-msi-mag-401qr-40-uwqhd-ultrawide">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/msi-mag401qr-40-uwqhd-219-widescreen-gaming-lcd-monitor-722869.jpg?v=1733278659" alt="Monitor Gamer MSI MAG 401QR 40&quot; UWQHD Ultrawide">
+                                <p>Monitor Gamer MSI MAG 401QR 40" UWQHD Ultrawide</p>
+                            </a>
+                            <strong>$650.000</strong>
+                            <a class="ver-specs" href="producto.html?id=monitor-gamer-msi-mag-401qr-40-uwqhd-ultrawide">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="monitor" data-id="monitor-gamer-msi-mag-322urdf-e16-32-4k-160hz" data-nombre="Monitor Gamer MSI MAG 322URDF E16 32&quot; 4K 160Hz" data-precio="750000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/msi-mag-322urdf-e16-32-4k-160hz-dual-mode-rapid-ips-lcd-gaming-monitor-1369863.jpg?v=1760685811">
+                            <a class="enlace-producto" href="producto.html?id=monitor-gamer-msi-mag-322urdf-e16-32-4k-160hz">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/msi-mag-322urdf-e16-32-4k-160hz-dual-mode-rapid-ips-lcd-gaming-monitor-1369863.jpg?v=1760685811" alt="Monitor Gamer MSI MAG 322URDF E16 32&quot; 4K 160Hz">
+                                <p>Monitor Gamer MSI MAG 322URDF E16 32" 4K 160Hz</p>
+                            </a>
+                            <strong>$750.000</strong>
+                            <a class="ver-specs" href="producto.html?id=monitor-gamer-msi-mag-322urdf-e16-32-4k-160hz">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="monitor" data-id="monitor-gamer-msi-mpg-491cqp-49-qd-oled-curvo" data-nombre="Monitor Gamer MSI MPG 491CQP 49&quot; QD-OLED Curvo" data-precio="1600000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/msi-mpg-491cqp-49-qd-oled-curved-widescreen-gaming-oled-monitor-329-metallic-black-830324.jpg?v=1733278659">
+                            <a class="enlace-producto" href="producto.html?id=monitor-gamer-msi-mpg-491cqp-49-qd-oled-curvo">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/msi-mpg-491cqp-49-qd-oled-curved-widescreen-gaming-oled-monitor-329-metallic-black-830324.jpg?v=1733278659" alt="Monitor Gamer MSI MPG 491CQP 49&quot; QD-OLED Curvo">
+                                <p>Monitor Gamer MSI MPG 491CQP 49" QD-OLED Curvo</p>
+                            </a>
+                            <strong>$1.600.000</strong>
+                            <a class="ver-specs" href="producto.html?id=monitor-gamer-msi-mpg-491cqp-49-qd-oled-curvo">Ver especificaciones</a>
+                        </article>
+                    </div>
+                    <div class="navegacion-armado"><a class="boton-agregar" href="armarpc-perifericos.html">Siguiente: Periféricos →</a></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Contacto</h2>
+            <div class="grilla-contacto">
+                <a class="item-contacto" href="https://wa.me/5491123433465" target="_blank" rel="noopener">
+                    <img src="icono-whatsapp.png" alt="">
+                    <div><small>WhatsApp</small><p>+54 11 2343-3465</p></div>
+                </a>
+                <a class="item-contacto" href="mailto:pcgamingstore@gmail.com">
+                    <img src="icono-mail.svg" alt="">
+                    <div><small>Email</small><p>pcgamingstore@gmail.com</p></div>
+                </a>
+                <a class="item-contacto" href="https://www.google.com/maps/search/?api=1&amp;query=Florida+537+CABA" target="_blank" rel="noopener">
+                    <img src="icono-ubicacion.png" alt="">
+                    <div><small>Local</small><p>Florida 537 local 379, CABA</p></div>
+                </a>
+                <a class="item-contacto" href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">
+                    <img src="icono-instagram.png" alt="">
+                    <div><small>Instagram</small><p>@pcgamingstore</p></div>
+                </a>
+            </div>
+            <div class="pie-inferior">
+                <a href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">@PCGAMINGSTORE</a>
+                <a href="terminos.html">Terminos y Condiciones</a>
+            </div>
+        </footer>
+    </main>
+    <script src="productos-datos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

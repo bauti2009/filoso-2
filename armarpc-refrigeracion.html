@@ -1,4 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Armar PC - Refrigeracion</title><link rel="stylesheet" href="style.css"></head>
-<body><main class="pagina"><header><div class="barra-superior"><a class="logo-principal" href="index.html"><img src="pclogo.png" alt="PC Gamer"></a><div class="buscador"><input type="search" aria-label="Buscar"><span>&#8981;</span></div><div class="iconos-header"><a href="iniciar-sesion.html"><img src="bx-user.png" alt="Usuario"></a><a href="carrito.html"><img src="bx-cart-alt-2.png" alt="Carrito"></a></div></div><nav><a href="productos.html">PRODUCTOS</a><a href="armarpc.html">ARMA TU PC</a><a href="pcarmada.html">PC ARMADAS</a><a href="ayuda.html">AYUDA</a></nav></header><section class="contenido-armado"><h1 class="titulo-armado">Arma Tu PC</h1><div class="armado-layout"><div class="menu-componentes"><a class="icono-componente" href="armarpc-procesador.html"><img src="imagenes-armado/procesador.png" alt="Procesador"></a><a class="icono-componente" href="armarpc-placa-madre.html"><img src="imagenes-armado/placa-madre.png" alt="Placa madre"></a><a class="icono-componente" href="armarpc-refrigeracion.html"><img src="imagenes-armado/refrigeracion.png" alt="Refrigeracion"></a><a class="icono-componente" href="armarpc-memoria-ram.html"><img src="imagenes-armado/memoria-ram.png" alt="Memoria RAM"></a><a class="icono-componente" href="armarpc-placa-video.html"><img src="imagenes-armado/placa-video.png" alt="Placa de video"></a><a class="icono-componente" href="armarpc-almacenamiento.html"><img src="imagenes-armado/almacenamiento.png" alt="Almacenamiento"></a><a class="icono-componente" href="armarpc-fuente.html"><img src="imagenes-armado/fuente.png" alt="Fuente"></a><a class="icono-componente" href="armarpc-gabinete.html"><img src="imagenes-armado/gabinete.png" alt="Gabinete"></a><a class="icono-componente" href="armarpc-monitor.html"><img src="imagenes-armado/monitor.png" alt="Monitor"></a><a class="icono-componente" href="armarpc-perifericos.html"><img src="imagenes-armado/perifericos.png" alt="Perifericos"></a></div><h2 class="nombre-componente">Refrigeracion</h2></div></section></main></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armar PC - Refrigeración</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="pagina">
+        <header>
+            <div class="barra-superior">
+                <a class="logo-principal" href="index.html"><img src="pclogo.png" alt="PC Gamer"></a>
+                <div class="buscador">
+                    <input type="search" aria-label="Buscar">
+                    <span>⌕</span>
+                </div>
+                <div class="iconos-header">
+                    <a href="iniciar-sesion.html"><img src="bx-user.png" alt="Usuario"></a>
+                    <a href="carrito.html"><img src="bx-cart-alt-2.png" alt="Carrito"></a>
+                </div>
+            </div>
+            <nav>
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="armarpc.html">ARMA TU PC</a>
+                <a href="pcarmada.html">PC ARMADAS</a>
+                <a href="ayuda.html">AYUDA</a>
+            </nav>
+        </header>
+
+        <section class="contenido-armado">
+            <h1 class="titulo-armado">Arma Tu PC</h1>
+            <div class="armado-layout">
+                <div class="menu-componentes">
+                    <a class="icono-componente" href="armarpc-procesador.html" title="Procesador"><img src="imagenes-armado/procesador.png" alt="" onerror="this.remove()"><span>Procesador</span></a>
+                    <a class="icono-componente" href="armarpc-placa-madre.html" title="Placa madre"><img src="imagenes-armado/placa-madre.png" alt="" onerror="this.remove()"><span>Placa madre</span></a>
+                    <a class="icono-componente" href="armarpc-refrigeracion.html" title="Refrigeración"><img src="imagenes-armado/refrigeracion.png" alt="" onerror="this.remove()"><span>Refrigeración</span></a>
+                    <a class="icono-componente" href="armarpc-memoria-ram.html" title="Memoria RAM"><img src="imagenes-armado/memoria-ram.png" alt="" onerror="this.remove()"><span>Memoria RAM</span></a>
+                    <a class="icono-componente" href="armarpc-placa-video.html" title="Placa de video"><img src="imagenes-armado/placa-video.png" alt="" onerror="this.remove()"><span>Placa de video</span></a>
+                    <a class="icono-componente" href="armarpc-almacenamiento.html" title="Almacenamiento"><img src="imagenes-armado/almacenamiento.png" alt="" onerror="this.remove()"><span>Almacenamiento</span></a>
+                    <a class="icono-componente" href="armarpc-fuente.html" title="Fuente"><img src="imagenes-armado/fuente.png" alt="" onerror="this.remove()"><span>Fuente</span></a>
+                    <a class="icono-componente" href="armarpc-gabinete.html" title="Gabinete"><img src="imagenes-armado/gabinete.png" alt="" onerror="this.remove()"><span>Gabinete</span></a>
+                    <a class="icono-componente" href="armarpc-monitor.html" title="Monitor"><img src="imagenes-armado/monitor.png" alt="" onerror="this.remove()"><span>Monitor</span></a>
+                    <a class="icono-componente" href="armarpc-perifericos.html" title="Periféricos"><img src="imagenes-armado/perifericos.png" alt="" onerror="this.remove()"><span>Periféricos</span></a>
+                </div>
+                <div class="columna-armado">
+                    <h2 class="nombre-componente">Refrigeración</h2>
+                    <div class="barra-armado" id="barra-armado"></div>
+                    <div class="grilla-armado">
+                        <article class="tarjeta-producto opcion-armado" data-slot="refrigeracion" data-id="cooler-cpu-cooler-master-hyper-212-spectrum-v3-argb" data-nombre="Cooler CPU Cooler Master Hyper 212 Spectrum V3 ARGB" data-precio="40000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/cooler-master-hyper-212-spectrum-v3-argb-cpu-air-cooler-rr-s4na-17pa-r1-561488.jpg?v=1748974140">
+                            <a class="enlace-producto" href="producto.html?id=cooler-cpu-cooler-master-hyper-212-spectrum-v3-argb">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/cooler-master-hyper-212-spectrum-v3-argb-cpu-air-cooler-rr-s4na-17pa-r1-561488.jpg?v=1748974140" alt="Cooler CPU Cooler Master Hyper 212 Spectrum V3 ARGB">
+                                <p>Cooler CPU Cooler Master Hyper 212 Spectrum V3 ARGB</p>
+                            </a>
+                            <strong>$40.000</strong>
+                            <a class="ver-specs" href="producto.html?id=cooler-cpu-cooler-master-hyper-212-spectrum-v3-argb">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="refrigeracion" data-id="cooler-cpu-thermalright-peerless-assassin-120-se" data-nombre="Cooler CPU Thermalright Peerless Assassin 120 SE" data-precio="55000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/thermalright-peerless-assassin-120-se-cpu-cooler-pa120-se-173597.jpg?v=1739968676">
+                            <a class="enlace-producto" href="producto.html?id=cooler-cpu-thermalright-peerless-assassin-120-se">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/thermalright-peerless-assassin-120-se-cpu-cooler-pa120-se-173597.jpg?v=1739968676" alt="Cooler CPU Thermalright Peerless Assassin 120 SE">
+                                <p>Cooler CPU Thermalright Peerless Assassin 120 SE</p>
+                            </a>
+                            <strong>$55.000</strong>
+                            <a class="ver-specs" href="producto.html?id=cooler-cpu-thermalright-peerless-assassin-120-se">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="refrigeracion" data-id="cooler-cpu-nzxt-t120-rgb-black" data-nombre="Cooler CPU NZXT T120 RGB Black" data-precio="55000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/nzxt-t120-rgb-cpu-air-cooler-black-rc-tr120-b1-781541.jpg?v=1749827513">
+                            <a class="enlace-producto" href="producto.html?id=cooler-cpu-nzxt-t120-rgb-black">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/nzxt-t120-rgb-cpu-air-cooler-black-rc-tr120-b1-781541.jpg?v=1749827513" alt="Cooler CPU NZXT T120 RGB Black">
+                                <p>Cooler CPU NZXT T120 RGB Black</p>
+                            </a>
+                            <strong>$55.000</strong>
+                            <a class="ver-specs" href="producto.html?id=cooler-cpu-nzxt-t120-rgb-black">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="refrigeracion" data-id="watercooler-thermaltake-th240-v2-argb-sync" data-nombre="Watercooler Thermaltake TH240 V2 ARGB Sync" data-precio="110000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/thermaltake-cl-w361-pl12sw-a-th240-v2-argb-sync-all-in-one-liquid-cooler-intelamd-471007.jpg?v=1733280688">
+                            <a class="enlace-producto" href="producto.html?id=watercooler-thermaltake-th240-v2-argb-sync">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/thermaltake-cl-w361-pl12sw-a-th240-v2-argb-sync-all-in-one-liquid-cooler-intelamd-471007.jpg?v=1733280688" alt="Watercooler Thermaltake TH240 V2 ARGB Sync">
+                                <p>Watercooler Thermaltake TH240 V2 ARGB Sync</p>
+                            </a>
+                            <strong>$110.000</strong>
+                            <a class="ver-specs" href="producto.html?id=watercooler-thermaltake-th240-v2-argb-sync">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="refrigeracion" data-id="watercooler-nzxt-kraken-plus-360-rgb-black-con-pantalla" data-nombre="Watercooler NZXT Kraken Plus 360 RGB Black con Pantalla" data-precio="280000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/nzxt-kraken-plus-360-rgb-aio-liquid-cooler-black-rl-kr360-b2-2729846.jpg?v=1759332932">
+                            <a class="enlace-producto" href="producto.html?id=watercooler-nzxt-kraken-plus-360-rgb-black-con-pantalla">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/nzxt-kraken-plus-360-rgb-aio-liquid-cooler-black-rl-kr360-b2-2729846.jpg?v=1759332932" alt="Watercooler NZXT Kraken Plus 360 RGB Black con Pantalla">
+                                <p>Watercooler NZXT Kraken Plus 360 RGB Black con Pantalla</p>
+                            </a>
+                            <strong>$280.000</strong>
+                            <a class="ver-specs" href="producto.html?id=watercooler-nzxt-kraken-plus-360-rgb-black-con-pantalla">Ver especificaciones</a>
+                        </article>
+                        <article class="tarjeta-producto opcion-armado" data-slot="refrigeracion" data-id="watercooler-nzxt-kraken-elite-360-rgb-white-con-pantalla" data-nombre="Watercooler NZXT Kraken Elite 360 RGB White con Pantalla" data-precio="380000" data-img="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/nzxt-kraken-elite-360-rgb-aio-liquid-cooler-white-rl-kr36e-w2-488624.jpg?v=1737719812">
+                            <a class="enlace-producto" href="producto.html?id=watercooler-nzxt-kraken-elite-360-rgb-white-con-pantalla">
+                                <img src="https://cdn.shopify.com/s/files/1/0587/1563/5868/files/nzxt-kraken-elite-360-rgb-aio-liquid-cooler-white-rl-kr36e-w2-488624.jpg?v=1737719812" alt="Watercooler NZXT Kraken Elite 360 RGB White con Pantalla">
+                                <p>Watercooler NZXT Kraken Elite 360 RGB White con Pantalla</p>
+                            </a>
+                            <strong>$380.000</strong>
+                            <a class="ver-specs" href="producto.html?id=watercooler-nzxt-kraken-elite-360-rgb-white-con-pantalla">Ver especificaciones</a>
+                        </article>
+                    </div>
+                    <div class="navegacion-armado"><a class="boton-agregar" href="armarpc-memoria-ram.html">Siguiente: Memoria RAM →</a></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Contacto</h2>
+            <div class="grilla-contacto">
+                <a class="item-contacto" href="https://wa.me/5491123433465" target="_blank" rel="noopener">
+                    <img src="icono-whatsapp.png" alt="">
+                    <div><small>WhatsApp</small><p>+54 11 2343-3465</p></div>
+                </a>
+                <a class="item-contacto" href="mailto:pcgamingstore@gmail.com">
+                    <img src="icono-mail.svg" alt="">
+                    <div><small>Email</small><p>pcgamingstore@gmail.com</p></div>
+                </a>
+                <a class="item-contacto" href="https://www.google.com/maps/search/?api=1&amp;query=Florida+537+CABA" target="_blank" rel="noopener">
+                    <img src="icono-ubicacion.png" alt="">
+                    <div><small>Local</small><p>Florida 537 local 379, CABA</p></div>
+                </a>
+                <a class="item-contacto" href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">
+                    <img src="icono-instagram.png" alt="">
+                    <div><small>Instagram</small><p>@pcgamingstore</p></div>
+                </a>
+            </div>
+            <div class="pie-inferior">
+                <a href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">@PCGAMINGSTORE</a>
+                <a href="terminos.html">Terminos y Condiciones</a>
+            </div>
+        </footer>
+    </main>
+    <script src="productos-datos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

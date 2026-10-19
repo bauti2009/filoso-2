@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="titulo-pagina">INICIAR SESION</h1>
     <main class="pagina">
         <header>
             <div class="barra-superior">
@@ -30,15 +29,17 @@
         </header>
 
         <section class="inicio-sesion">
-            <form class="caja-login">
+            <form class="caja-login" id="form-login" novalidate>
+                <h1 class="titulo-cuenta">INICIAR SESION</h1>
                 <div class="campo-formulario">
                     <label for="email">EMAIL</label>
-                    <input id="email" type="email">
+                    <input id="email" type="email" autocomplete="email">
                 </div>
                 <div class="campo-formulario">
                     <label for="password">CONTRASEÑA</label>
-                    <input id="password" type="password">
+                    <input id="password" type="password" autocomplete="current-password">
                 </div>
+                <p class="aviso-consulta" id="aviso-login" aria-live="polite"></p>
                 <button class="boton" type="submit">INICIAR SESION</button>
             </form>
             <p class="texto-cuenta">No tienes cuenta?</p>
@@ -48,28 +49,30 @@
         <footer>
             <h2>Contacto</h2>
             <div class="grilla-contacto">
-                <div class="item-contacto">
-                    <img src="Whatsapp.png" alt="">
+                <a class="item-contacto" href="https://wa.me/5491123433465" target="_blank" rel="noopener">
+                    <img src="icono-whatsapp.png" alt="">
                     <div><small>WhatsApp</small><p>+54 11 2343-3465</p></div>
-                </div>
-                <div class="item-contacto">
-                    <img src="mail(1).png" alt="">
-                    <div><small>Empresa</small><a href="#">pcgamingstore@gmail.com</a></div>
-                </div>
-                <div class="item-contacto">
-                    <span class="icono-local"></span>
+                </a>
+                <a class="item-contacto" href="mailto:pcgamingstore@gmail.com">
+                    <img src="icono-mail.svg" alt="">
+                    <div><small>Email</small><p>pcgamingstore@gmail.com</p></div>
+                </a>
+                <a class="item-contacto" href="https://www.google.com/maps/search/?api=1&amp;query=Florida+537+CABA" target="_blank" rel="noopener">
+                    <img src="icono-ubicacion.png" alt="">
                     <div><small>Local</small><p>Florida 537 local 379, CABA</p></div>
-                </div>
-                <div class="item-contacto">
-                    <img src="ig.png" alt="">
-                    <div><small>Instagram</small><a href="#">@pcgamingstore</a></div>
-                </div>
+                </a>
+                <a class="item-contacto" href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">
+                    <img src="icono-instagram.png" alt="">
+                    <div><small>Instagram</small><p>@pcgamingstore</p></div>
+                </a>
             </div>
             <div class="pie-inferior">
-                <span>@PCGAMINGSTORE</span>
-                <span>Terminos y Condiciones</span>
+                <a href="https://www.instagram.com/pcgamingstore" target="_blank" rel="noopener">@PCGAMINGSTORE</a>
+                <a href="terminos.html">Terminos y Condiciones</a>
             </div>
         </footer>
     </main>
+    <script src="productos-datos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
