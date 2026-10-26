@@ -189,7 +189,7 @@ function mostrarCarrito() {
         fila.append(img, info, cantidad, subtotal, quitar);
         lista.appendChild(fila);
     });
-
+stente.cantidad += 1;
     const pie = crear("div", "pie-carrito");
     const totalTexto = crear("p", "total-carrito");
     totalTexto.append("Total: ", crear("strong", "", formatoPrecio(total)));

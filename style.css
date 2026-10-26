@@ -39,8 +39,8 @@ header {
 }
 
 .logo-principal img {
-    width: 250px;
-    height: auto;
+    width: 150px;
+    height: 50px;
     display: block;
 }
 
@@ -50,7 +50,7 @@ header {
 
 .buscador input {
     width: 100%;
-    height: 50px;
+    height: 40px;
     border: 0;
     border-radius: 5px;
     padding: 0 80px 0 20px;
@@ -60,8 +60,8 @@ header {
 .buscador span {
     position: absolute;
     right: 25px;
-    top: -28px;
-    font-size: 45px;
+    top: -15px;
+    font-size: 30px;
 }
 
 .iconos-header {
@@ -71,9 +71,19 @@ header {
 }
 
 .iconos-header img {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
+}
+
+.bannerindex{
+    width: 100%;
+}
+
+.imgbanner{
+    width: 100%;
+  height: 500px; /* Mantiene la proporción original para que no se deforme */
+  display: block;
 }
 
 nav {
