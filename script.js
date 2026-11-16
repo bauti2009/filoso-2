@@ -138,6 +138,8 @@ function mostrarCarrito() {
     const carrito = obtenerCarrito();
 
     lista.innerHTML = "";
+    let total = carrito.reduce((suma, item) => suma + item.precio * item.cantidad, 0);
+    mostrarPieCarrito(total);
     if (carrito.length === 0) {
         vacio.style.display = "";
         lista.style.display = "none";
@@ -146,7 +148,7 @@ function mostrarCarrito() {
     vacio.style.display = "none";
     lista.style.display = "";
 
-    let total = 0;
+    total = 0;
     carrito.forEach((item, posicion) => {
         total += item.precio * item.cantidad;
 
@@ -189,35 +191,43 @@ function mostrarCarrito() {
         fila.append(img, info, cantidad, subtotal, quitar);
         lista.appendChild(fila);
     });
-stente.cantidad += 1;
-    const pie = crear("div", "pie-carrito");
-    const totalTexto = crear("p", "total-carrito");
-    totalTexto.append("Total: ", crear("strong", "", formatoPrecio(total)));
+}
 
-    const botones = crear("div", "botones-carrito");
-    const vaciar = crear("button", "boton-secundario", "Vaciar carrito");
-    const comprar = crear("button", "boton-agregar", "Finalizar compra");
-    vaciar.type = comprar.type = "button";
+// Total y botones Comprar / Vaciar (estan escritos en carrito.html, aca solo se les da la funcion)
+function mostrarPieCarrito(total) {
+    const totalEl = document.getElementById("carrito-total");
+    if (totalEl) totalEl.textContent = formatoPrecio(total);
+}
+
+function prepararBotonesCarrito() {
+    const vaciar = document.getElementById("boton-vaciar");
+    const comprar = document.getElementById("boton-comprar");
+    if (!vaciar || !comprar) return;
+
     vaciar.addEventListener("click", () => {
         guardarCarrito([]);
         mostrarCarrito();
     });
+
     comprar.addEventListener("click", () => {
         const usuario = usuarioActual();
         if (!usuario) {
-            alert("Para finalizar la compra tenés que iniciar sesión o crear una cuenta.");
+            // sin sesion: va a iniciar sesion y el carrito queda como esta
             location.href = "iniciar-sesion.html?volver=carrito.html";
             return;
         }
-        guardarPedido(usuario, obtenerCarrito(), total);
+        const items = obtenerCarrito();
+        if (items.length === 0) {
+            mostrarAviso("Tu carrito está vacío");
+            return;
+        }
+        const total = items.reduce((suma, item) => suma + item.precio * item.cantidad, 0);
+        guardarPedido(usuario, items, total);
         alert("¡Gracias por tu compra, " + usuario.nombre.split(" ")[0] + "! El total fue de " + formatoPrecio(total) +
             ".\nTe vamos a contactar por WhatsApp para coordinar el pago y el envío.\nPodés ver tu pedido en \"Mi cuenta\".");
         guardarCarrito([]);
         mostrarCarrito();
     });
-    botones.append(vaciar, comprar);
-    pie.append(totalTexto, botones);
-    lista.appendChild(pie);
 }
 
 function cambiarCantidad(posicion, cambio) {
@@ -908,6 +918,7 @@ document.addEventListener("DOMContentLoaded", () => {
     prepararOpcionesArmado();
     prepararAyuda();
     refrescarArmado();
+    prepararBotonesCarrito();
     mostrarCarrito();
     actualizarContador();
 });
